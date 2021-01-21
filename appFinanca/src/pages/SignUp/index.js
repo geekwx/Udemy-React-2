@@ -6,7 +6,7 @@ import { AuthContext } from '../../contexts/auth';
 import { Background, Container, Logo, AreaInput, Input, SubmitButton, 
 SubmitText} from '../SignIn/styles';
 
-import { AuthContext } from '../../contexts/auth';
+
 
 export default function SignIn() {
   const [nome, setNome] = useState('');
