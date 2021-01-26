@@ -7,7 +7,7 @@ margin-top: 30px;
 margin-left: 15px;
 margin-bottom: 15px;
 width: 100%;
-height: 50%;
+height: 20%;
 `;
 
 
