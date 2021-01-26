@@ -50,7 +50,7 @@ async function handleAdd() {
     await firebase.database().ref('historico').child(uid).child(key).set({
         tipo: tipo,
         valor: parseFloat(valor),
-        date: format(new Date(), 'dd/MM/yy')
+        date: format(new Date(), 'dd/MM/yyyy')
     })
     // Autalizar Saldo
 

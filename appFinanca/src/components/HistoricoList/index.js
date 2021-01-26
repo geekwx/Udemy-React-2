@@ -1,11 +1,13 @@
 import React from 'react';
+import { TouchableWithoutFeedback } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Feather';
 
 import {Container, Tipo, IconView, ValorText, TipoText } from './styles';
 
-export default function HistoricoList({data}){
+export default function HistoricoList({data, deleteItem}){
     return(
+        <TouchableWithoutFeedback onLongPress={() => deleteItem(data)}>
         <Container>
             <Tipo>
                 <IconView tipo={data.tipo}>
@@ -20,5 +22,6 @@ export default function HistoricoList({data}){
                 R$ {data.valor}
             </ValorText>
         </Container>
+        </TouchableWithoutFeedback>
     );
 }
